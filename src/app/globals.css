@@ -1,6 +1,45 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'ClashDisplay-Regular';
+  src: url('../Fonts/WEB/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('../Fonts/WEB/fonts/ClashDisplay-Regular.woff') format('woff'),
+       url('../Fonts/WEB/fonts/ClashDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ClashDisplay-Semibold';
+  src: url('../Fonts/WEB/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+       url('../Fonts/WEB/fonts/ClashDisplay-Semibold.woff') format('woff'),
+       url('../Fonts/WEB/fonts/ClashDisplay-Semibold.ttf') format('truetype');
+       font-weight: 600;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Medium';
+  src: url('../Fonts/WEB/fonts/ClashDisplay-Medium.woff2') format('woff2'),
+       url('../Fonts/WEB/fonts/ClashDisplay-Medium.woff') format('woff'),
+       url('../Fonts/WEB/fonts/ClashDisplay-Medium.ttf') format('truetype');
+       font-weight: 500;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face{
+  font-family: 'Poppins';
+  src: url('../poppins/Poppins-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -17,11 +56,34 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'ClashDisplay-Regular', sans-serif;
+}
+
+.flexCenter{
+  @apply flex justify-center items-center
+}
+
+.flexEnd{
+  @apply flex justify-end items-center
+}
+
+.flexStart{
+  @apply flex justify-start items-center
+}
+
+.flexBetween{
+  @apply flex justify-between items-center
+}
+
+.paddings{
+  @apply lg:px-20 py-6 px-5
+}
+.footer{
+  @apply lg:px-20 py-20 px-10 bg-black
+}
+.footerCopyright{
+  @apply mt-10
+}
+.fonts{
+  @apply mt-4
 }
