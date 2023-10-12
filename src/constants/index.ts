@@ -1,8 +1,8 @@
 export const Navlinks = [
     {href:'/',key:'Home',text:'Home'},
-    {href:'/',key:'About',text:'About'},
+    {href:'/about',key:'About',text:'About'},
     {href:'/',key:'Ministries',text:'Ministries'},
-    {href:'/',key:'Events',text:'Events'},
+    {href:'/events',key:'Events',text:'Events'},
     {href:'/',key:'Explore',text:'Explore'},
 ]
 
@@ -62,4 +62,13 @@ export const categoryLinks =[
     {href:'/events',key:'Events',text:'Events'},
     {href:'/joinus',key:'Join Us',text:'Join Us'},
     {href:'/gloryhomes',key:'Glory Homes',text:'Glory Homes'},
+]
+export const MinistriesLinks =[
+    {href:'/purestreams',key:'Pure Stream',text:'Pure Stream'},
+    {href:'/teensministry',key:'Teens Ministry',text:'Teens Ministry'},
+    {href:'/childrenschurch',key:'children church',text:'children church'},
+    {href:'/economichub',key:'Economic hub',text:'Economic hub'},
+    {href:'/sod',key:'School of Destiny',text:'School of Destiny'},
+    {href:'/Fire&wisdom',key:'Fire & Wisdom conf.',text:'Fire & Wisdom conf.'},
+    {href:'/jesusgirls',key:'Jesus Girls',text:'Jesus Girls'},
 ]
