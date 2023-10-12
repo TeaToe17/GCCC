@@ -38,7 +38,7 @@ const Locations = () => {
             {diffrentLocations.map((info, index) => (
               <div
                 key={index}
-                className=" flex flex-col w-52 text-sm bg-[#F5F5F5] text-black h-6 m-3 rounded-md py-6 px-4 text-center justify-center  items-center hover:bg-black hover:text-white"
+                className=" flex flex-col w-52 text-sm bg-[#F5F5F5] text-black h-6 m-3 rounded-md py-6 px-4 text-center justify-center  items-center hover:bg-black hover:text-white transition duration-500"
               >
                 <span>{info.text}</span>
               </div>
@@ -78,10 +78,10 @@ const Locations = () => {
                   </span>
                 </div>
                 <div className="flex gap-5">
-                  <button className="bg-[#EC3237] h-12 text-white rounded w-36 ">
+                  <button className="bg-[#EC3237] h-12 text-white rounded w-36 hover:scale-110 duration-700 transition">
                     Contact Us
                   </button>
-                  <button className="border-red-600 border-2 border-solid text-red-600 rounded w-36 h-12">
+                  <button className="border-red-600 border-2 border-solid text-red-600 rounded w-36 h-12 hover:scale-110 duration-700 transition">
                     Locate Venue
                   </button>
                 </div>
