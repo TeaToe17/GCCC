@@ -39,7 +39,7 @@ const Events = () => {
   return (
     <div>
       <Hero />
-      <div className="flex items-center justify-center w-full flex-col  px-3 py-10">
+      <div className="flex items-center justify-center w-full flex-col  px-3 py-10 gap-5">
         <div className="flex flex-col gap-3">
           <h1 className="text-4xl font-bold text-black ">
             Our Upcoming Events
@@ -49,8 +49,7 @@ const Events = () => {
           </span>
         </div>
         <div className="flex items-end w-full justify-end">
-          <select className="w-52 h-5 border-solid rounded-md border-2 border-[#a2a2a5cc] p-5 text-black">
-            select a location
+          <select className="w-52 h-9 border-solid rounded-md border-2 border-[#a2a2a5cc] text-black">
             <option value="default">Select a location</option>
             <option>Select a city...</option>
             <option>Select a city...</option>
@@ -74,7 +73,7 @@ const Events = () => {
                 </div>
                 <div className="flex  items-start  flex-col justify-start gap-3">
                   <div className="flex flex-col gap-3 m-2">
-                    <h3 className="font-bold text=-5xl text-black">
+                    <h3 className="font-semibold text=-5xl text-black">
                       {info.title}
                     </h3>
                     <span className="text-[#131316CC] font-sm font-normal text-sm ">
