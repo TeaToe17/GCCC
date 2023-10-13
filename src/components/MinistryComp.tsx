@@ -6,7 +6,7 @@ const MinistryComp = (props) => {
     return (
       <div>
         <div className="flex flex-col items-center justify-center m-[40px] ">
-          <p className="font-bold text-[64px] ">Pure Streams</p>
+          <p className="font-bold text-[64px] "> {props.name} </p>
           <p className="mt-[20px] mb-[20px] text-center ">
             Experience the transformative power of worship and encounter God's{" "}
             <br />
@@ -25,17 +25,17 @@ const MinistryComp = (props) => {
             className=" w-[296px] h-[412px] m-[10px] "
           />
           <Image
-            src={props.image1}
+            src={props.image2}
             alt="img"
             className=" w-[296px] h-[412px] m-[10px] "
           />
           <Image
-            src={props.image1}
+            src={props.image3}
             alt="img"
             className=" w-[296px] h-[412px] m-[10px] "
           />
           <Image
-            src={props.image1}
+            src={props.image4}
             alt="img"
             className=" w-[296px] h-[412px] m-[10px] "
           />
@@ -59,8 +59,8 @@ const MinistryComp = (props) => {
             <img src="polygon 2.png" alt="" />
           </div>
           <div className="flex overflow-scroll :web ">
-            <PureStreams image1={props.image1} />
-            <PureStreams image1={props.image1} />
+            <PureStreams image1={props.image5} />
+            <PureStreams image1={props.image6} />
             <PureStreams image1={props.image1} />
           </div>
           <div className="bg-[url('/purestreampic.png')] w-full h-[500px] mt-[50px] text-white flex flex-col  justify-center p-[30px] ">
