@@ -27,7 +27,7 @@ const JoinUs: FC = () => {
   return (
     <div>
       <Hero />
-      <div className="p-10 w-auto">
+      <div className="p-4 w-auto">
         <header className="flex w-full items-center justify-center">
           {activeState1 ? (
             <button
