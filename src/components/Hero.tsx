@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Hero = () => {
   return (
     <>
-    <div className="paddings font-clash-display bg-[url('/hero-img.png')] bg-cover bg-no-repeat">
+    <div className="paddings font-clash-display bg-[url('/hero-img.png')] bg-cover bg-no-repeat sm:min-w-[100vw]">
      <Header />
       <div className="flex flex-col gap-4 text-white">
         <span>Welcome to GCCC</span>
@@ -21,8 +21,8 @@ const Hero = () => {
         </div>
       </div>
     </div>
-    <div>
-        <ul className="lg:text-sm flex paddings gap-8 uppercase font-clash-display-medium text-xs">  
+    <div className="sm:max-w-[70vw] " >
+        <ul className="lg:text-sm flex paddings gap-[20px] uppercase font-clash-display-medium text-xs">  
         {categoryLinks.map((link) => (
           <Link
           href={link.href}
