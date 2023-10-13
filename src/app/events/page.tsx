@@ -1,14 +1,6 @@
 import Hero from "@/components/Hero";
 import Image from "next/image";
 const Events = () => {
-  interface UpcominEvents {
-    id: number;
-    title: string;
-    about: string;
-    time: string;
-    location: string;
-    src: string;
-  }
 
   const upcomingEvents = [
     {
@@ -58,11 +50,11 @@ const Events = () => {
         <div>
           <div className="flex flex-col gap-5">
             {upcomingEvents.map((info, index) => (
-              <div
-                className="flex gap-5 max-w-[820px] items-center justify-center"
+              <div 
+                className="flex gap-5 max-w-[820px] items-center justify-center max-sm:flex-wrap"
                 key={index}
               >
-                <div>
+                <div >
                   <Image
                     src={info.src}
                     alt="hyms"

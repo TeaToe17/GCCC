@@ -117,11 +117,11 @@ const Home = () => {
       <section className="flex flex-wrap sm:p-[60px] md:p-[60px] p-[20px] lg:p-[60px] items-center justify-center">
         <div className="flex relative w-auto lg:p-0 md:p-0 items-center justify-center shrink p-20  sm:h-[560px] lg:h-[560px] ">
           <Image
-            src="/Papi.png"
+            src="/locationimg1.png"
             alt="Senior Pastor Zach"
             width={400}
             height={560}
-            className="w-[350px] lg:w-[400px]  sm:h-[560px] md:h-[560px] lg:h-[560px] h-[400px] shrink"
+            className="w-[350px] lg:w-[400px]  sm:h-[560px] md:h-[560px] lg:h-[560px] h-[400px]  bg-center bg-cover bg-no-repeat max-sm:w-[150px]"
           />
           <Image
             src="/VideoShoot.png"
