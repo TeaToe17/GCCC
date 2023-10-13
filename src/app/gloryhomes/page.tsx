@@ -23,6 +23,7 @@ const GloryHomes = () => {
                 src="/search.svg"
                 alt="search icon"
                 width={20}
+                
                 height={20}
               />
             </span>
