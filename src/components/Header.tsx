@@ -55,8 +55,9 @@ const notDropDown = () => {
         <HeaderLinks key={Navlinks[2].key} href={Navlinks[2].href} text={Navlinks[2].text}/>
          {isOpen && (
         <div className="dropdown-content flex flex-col bg-lightblue text-gray-600 w-48 items-center justify-center p-2 rounded absolute mt-6">
-         {MinistriesLinks.map((link)=>(
+         {MinistriesLinks.map((link, index)=>(
           <Link
+          key={index}
           href={link.href}
           className='hover:bg-blue-400 hover:text-white w-full mb-4 hover:animate-enlarge flexCenter block py-2'
           >
