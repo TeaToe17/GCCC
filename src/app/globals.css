@@ -87,3 +87,7 @@ body {
 .fonts{
   @apply mt-4
 }
+
+
+  ::-webkit-scrollbar {
+width: 0;  }

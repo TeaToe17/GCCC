@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import PureStreams from "./Purestream";
+
 const MinistryComp = (props) => {
     return (
       <div>
@@ -51,18 +53,38 @@ const MinistryComp = (props) => {
             lives are forever changed.
           </p>
         </div>
-        <div className="m-[50px]" >
-            <div className="flex justify-center " >
-                <p className="mr-auto" >
-                    Upcoming Events
-                </p>
-                <p>
-                    arrow
-                </p>
+        <div className="m-[50px]">
+          <div className="flex justify-center ml-[20px] mt-[20px] mb-[20px] ">
+            <p className="mr-auto">Upcoming Events</p>
+            <img src="polygon 2.png" alt="" />
+          </div>
+          <div className="flex overflow-scroll :web ">
+            <PureStreams image1={props.image1} />
+            <PureStreams image1={props.image1} />
+            <PureStreams image1={props.image1} />
+          </div>
+          <div className="bg-[url('/purestreampic.png')] w-full h-[500px] mt-[50px] text-white flex flex-col  justify-center p-[30px] ">
+            <p className="font-bold text-[20px] ">
+              Connect with Children's Church
+            </p>
+            <p className="mt-[20px] mb-[20px] ">
+              Providing a safe space for growth and exploration
+            </p>
+            <div className="flex gap-[20px]">
+              <div className="bg-red-500 w-[238px] h-[56px] text-[25px] flex justify-center items-center ">
+                Visit Our Instagram
+              </div>
+              <div className="bg-white w-[56px] h-[56px] flex justify-center items-center  ">
+                <img src="facebook.png" alt="" />
+              </div>
+              <div className="bg-white w-[56px] h-[56px] flex justify-center items-center ">
+                <img src="instagram.png" alt="" />
+              </div>
+              <div className="bg-white w-[56px] h-[56px] flex justify-center items-center ">
+                <img src="twitter.png" alt="" />
+              </div>
             </div>
-            <div>
-                <img src={props.image1} alt="" className="w-[361px] h-[300px] " />
-            </div>
+          </div>
         </div>
       </div>
     );
