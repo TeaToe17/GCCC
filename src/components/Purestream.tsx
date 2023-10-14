@@ -1,10 +1,15 @@
 import Image from "next/image";
 
-const PureStreams = (props) => {
+type Props = {
+  image1:string
+}
+const PureStreams = ({image1}:Props) => {
     return (
       <div className="flex flex-row ">
         <Image
-          src={props.image1}
+          src={image1}
+          width={250}
+          height={250}
           alt="img"
           className="min-w-[250px] h-[250px]  "
         />

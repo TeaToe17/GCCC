@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Hero = () => {
   return (
     <>
-    <div className="paddings font-clash-display bg-[url('/hero-img.png')] bg-cover bg-no-repeat sm:min-w-[100vw]">
+    <div className="paddings font-clash-display bg-[url('/hero-img.png')] text-white bg-cover bg-no-repeat sm:min-w-[100vw]">
      <Header />
       <div className="flex flex-col gap-4 text-white">
         <span>Welcome to GCCC</span>
