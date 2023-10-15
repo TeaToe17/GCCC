@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './Header'
-import {categoryLinks} from '@/constants'
+import {categoryLinks, MinistriesLinks}  from '@/constants'
 import Link from 'next/link'
 const Hero = () => {
   return (

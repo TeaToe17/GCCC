@@ -5,7 +5,7 @@ type Props = {
 }
 const PureStreams = ({image1}:Props) => {
     return (
-      <div className="flex flex-row ">
+      <div className="flex flex-row mx-[40px] ">
         <Image
           src={image1}
           width={250}
@@ -16,7 +16,7 @@ const PureStreams = ({image1}:Props) => {
         <div className="basis-[45%] ml-[50px] mr-[50px]">
           <p className="font-bold">Psalms Hymns & Spiritual Song</p>
           <div className="flex mt-[20px] mb-[20px] ">
-            <img src="date_range.png" alt="" />
+            <img src="date_range.png" alt="" className="h-[30px]" />
             <p className="ml-[5px]">Saturday May 21, 2023 | 12:30 PM</p>
           </div>
           <div className="flex mt-[20px] mb-[20px] ">

@@ -4,7 +4,7 @@ import MinistryComp from '@/components/MinistryComp'
 
 const PureStreams = () => {
     return(
-        <div className="paddings">
+        <div className='w-full' >
             <Header />
             <MinistryComp 
             name = "Pure Streams"

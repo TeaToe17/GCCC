@@ -2,7 +2,7 @@ import Header from '@/components/Header'
 import MinistryComp from '@/components/MinistryComp'
 const Fire = () => {
     return(
-        <div className="paddings">
+        <div>
              <Header />
              <MinistryComp 
             name = "Fire & Wisdom conference"

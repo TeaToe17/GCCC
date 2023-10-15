@@ -114,7 +114,6 @@ const About = () => {
               className="mb-[10px]"
               // onClick={}
             />
-            kkk
           </Link>
 
           <p className="font-bold">Olakunle Zakariya</p>

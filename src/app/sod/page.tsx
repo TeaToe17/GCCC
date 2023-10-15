@@ -2,7 +2,7 @@ import Header from '@/components/Header'
 import MinistryComp from '@/components/MinistryComp'
 const SchoolOfDestiny = () => {
     return(
-        <div className="paddings">
+        <div>
             <Header />
             <MinistryComp 
             name = "School Of Destiny"
