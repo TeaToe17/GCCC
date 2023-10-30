@@ -1,11 +1,11 @@
 import React from 'react'
 import Header from './Header'
-import {categoryLinks} from '@/constants'
+import {categoryLinks, MinistriesLinks}  from '@/constants'
 import Link from 'next/link'
 const Hero = () => {
   return (
     <>
-    <div className="paddings font-clash-display bg-[url('/hero-img.png')] bg-cover bg-no-repeat text-white">
+    <div className="paddings font-clash-display bg-[url('/hero-img.png')] text-white bg-cover bg-no-repeat sm:min-w-[100vw]">
      <Header />
       <div className="flex flex-col gap-4 text-white">
         <span>Welcome to GCCC</span>
@@ -21,11 +21,11 @@ const Hero = () => {
         </div>
       </div>
     </div>
-    <div>
-        <ul className="lg:text-sm flex paddings gap-8 uppercase font-clash-display-medium text-xs flex-wrap">  
-        {categoryLinks.map((link, index) => (
+    <div className="sm:max-w-[70vw] " >
+        <ul className="lg:text-sm flex paddings gap-[20px] uppercase font-clash-display-medium text-xs">  
+        {categoryLinks.map((link) => (
           <Link
-          key={index}
+          key={link.key}
           href={link.href}
           className="hover:text-lightred-100">
             {link.text}
