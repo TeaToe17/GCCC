@@ -1,6 +1,36 @@
 import Hero from "@/components/Hero";
 import Image from "next/image";
 const Events = () => {
+<<<<<<< Updated upstream
+=======
+
+ const upcomingEvents = [
+    {
+      title: " Psalms Hymns & Spiritual Song",
+      about:
+        " It is in Gods presence we experience the most joy and the highest pleasure. PHSS is in a few weeks, are you ready to experience the joy of The Lord? ",
+      time: " Saturday May 21, 2023 | 12:30 PM",
+      location: " 12 Efon Alaye Street, Off Sule Abore, Lagos. Nigeria.",
+      src: "/eventsimg.png",
+    },
+    {
+      title: " Psalms Hymns & Spiritual Song",
+      about:
+        " It is in Gods presence we experience the most joy and the highest pleasure. PHSS is in a few weeks, are you ready to experience the joy of The Lord? ",
+      time: " Saturday May 21, 2023 | 12:30 PM",
+      location: " 12 Efon Alaye Street, Off Sule Abore, Lagos. Nigeria.",
+      src: "/eventsimg.png",
+    },
+    {
+      title: " Psalms Hymns & Spiritual Song",
+      about:
+        " It is in Gods presence we experience the most joy and the highest pleasure. PHSS is in a few weeks, are you ready to experience the joy of The Lord? ",
+      time: " Saturday May 21, 2023 | 12:30 PM",
+      location: " 12 Efon Alaye Street, Off Sule Abore, Lagos. Nigeria.",
+      src: "/eventsimg.png",
+    },
+  ];
+>>>>>>> Stashed changes
   return (
     <div>
       <Hero />
