@@ -54,11 +54,12 @@ const notDropDown = () => {
         <div className='flex flex-col items-center relative' onMouseEnter={dropDown} onMouseLeave={notDropDown}>
         <HeaderLinks key={Navlinks[2].key} href={Navlinks[2].href} text={Navlinks[2].text}/>
          {isOpen && (
-        <div className="dropdown-content flex flex-col bg-white text-black w-32 items-center p-2 rounded-sm absolute mt-6">
-         {MinistriesLinks.map((link)=>(
+        <div className="dropdown-content flex flex-col bg-lightblue text-gray-600 w-48 items-center justify-center p-2 rounded absolute mt-6">
+         {MinistriesLinks.map((link, index)=>(
           <Link
+          key={index}
           href={link.href}
-          className='border-b-2 block'
+          className='hover:bg-blue-400 hover:text-white w-full mb-4 hover:animate-enlarge flexCenter block py-2'
           >
           {link.text}
           </Link>
