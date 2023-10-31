@@ -59,7 +59,7 @@ const Events = () => {
                     alt="hyms"
                     width={300}
                     height={130}
-                    className="w-[350px] h-[220px]"
+                    className="w-[350px] h-[220px] shrink-0 rounded-lg "
                   />
                 </div>
                 <div className="flex  items-start  flex-col justify-start gap-3">
