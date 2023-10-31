@@ -94,7 +94,7 @@ const MinistryComp = ({name,image1,image2,image3,image4,image5,image6}:Props) =>
           </div>
           <div className="bg-[url('/purestreampic.png')] h-[500px] w-full m-0 mt-[50px] text-white flex flex-col  justify-center p-[30px] ">
             <p className="font-bold lg:text-[20px] ">
-              Connect with Children's Church
+              Connect with Children&apos;s Church
             </p>
             <p className="mt-[20px] mb-[20px] ">
               Providing a safe space for growth and exploration

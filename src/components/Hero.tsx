@@ -22,7 +22,7 @@ const Hero = () => {
       </div>
     </div>
     <div className="sm:max-w-[70vw] " >
-        <ul className="lg:text-sm flex paddings gap-[20px] uppercase font-clash-display-medium text-xs">  
+        <ul className="lg:text-sm flex paddings gap-[20px] uppercase font-clash-display-medium text-xs flex-wrap">  
         {categoryLinks.map((link) => (
           <Link
           key={link.key}
