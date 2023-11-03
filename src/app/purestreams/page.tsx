@@ -1,11 +1,25 @@
+"use client"
+import {useCallback,useState} from "react"
+import {DropDown} from "@/components/DropDown"
 import Header from '@/components/Header'
 import MinistryComp from '@/components/MinistryComp'
 
 
 const PureStreams = () => {
+    const [dropDown, setDropDown] = useState(false)
+    const handleDropDown = useCallback(() => {
+      setDropDown(prevdropDown => !prevdropDown)
+    }, [])
     return(
         <div className='w-full' >
-            <Header />
+            {dropDown &&  
+   <DropDown onClose={handleDropDown}/>
+    }
+             {!dropDown && 
+    <div className="h-full">
+     <Header onOpen={handleDropDown}/>
+    </div>
+      }
             <MinistryComp 
             name = "Pure Streams"
             image1 = "/pureStreamImg1.png"

@@ -1,9 +1,24 @@
+
+"use client"
+import {useCallback,useState} from "react"
+import {DropDown} from "@/components/DropDown"
 import Header from '@/components/Header'
 import MinistryComp from '@/components/MinistryComp'
 const EconomicHub = () => {
+    const [dropDown, setDropDown] = useState(false)
+    const handleDropDown = useCallback(() => {
+      setDropDown(prevdropDown => !prevdropDown)
+    }, [])
     return(
         <div>
-             <Header />
+             {dropDown &&  
+   <DropDown onClose={handleDropDown}/>
+    }
+             {!dropDown && 
+    <div className="h-full">
+     <Header onOpen={handleDropDown}/>
+    </div>
+      }
              <MinistryComp 
             name = "Economic Hub"
             image1 = "/eco1.svg"

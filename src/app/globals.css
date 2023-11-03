@@ -87,6 +87,10 @@ body {
 .fonts{
   @apply mt-4
 }
+.drop-down{
+  transition: height 0.7s ease-in-out;
+  height: auto;
+}
 
 
   ::-webkit-scrollbar {

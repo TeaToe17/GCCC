@@ -16,7 +16,7 @@ type Props ={
 }
 const MinistryComp = ({name,image1,image2,image3,image4,image5,image6}:Props) => {
     return (
-      <div>
+      <div className="pt-32">
         <Link href="/">
           <div className=" xl;hidden lg:hidden md:hidden flex items-center font-bold text-red-700 text-left cursor-pointer lg:ml-[153px] ">
             <img src="arrow-right.png" alt="" className="h-[16px] m-[2px] " />

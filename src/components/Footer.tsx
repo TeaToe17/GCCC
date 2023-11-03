@@ -67,14 +67,14 @@ const Footer = () => {
           />
         </div>
       </div>
-      <div className="flex gap-10 flex-wrap">
+      <div className="md:flex gap-10 md:flex-wrap grid grid-cols-2">
         {FooterLinks.map((link, index) => (
           <div className="flex flex-col" key={index}>
-            <span className="text-white mb-4 font-bold">{link.title}</span>
+            <span className="text-white mb-4 md:font-bold font-semibold">{link.title}</span>
             {link.links.map((foot, index) => (
               <Link
               href={link.href}
-              className="text-white text-sm w-full mb-3 font-light font-Poppins"
+              className="text-white md:text-sm text-xs w-full mb-3 font-light font-Poppins"
               key={index}
               >
                 {foot}
