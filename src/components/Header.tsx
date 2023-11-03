@@ -53,7 +53,7 @@ const scrolled = useScrollTop()
       <h6 className="text-xs w-32 uppercase font-Poppins leading-3">Glory realms ministries</h6>
       </div>
       </Link>
-      <div className="flex gap-4 items-center">
+      <div className="flex gap-4 items-center flex-wrap">
         <ul className="xl:flex hidden text-small gap-7 uppercase font-clash-display-medium">
          <HeaderLinks key={Navlinks[0].key} href={Navlinks[0].href} text={Navlinks[0].text}/>
          <HeaderLinks key={Navlinks[1].key} href={Navlinks[1].href} text={Navlinks[1].text}/>
