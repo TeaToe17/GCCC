@@ -45,7 +45,7 @@ const HeaderLinks = ({key, href, text} : Props) =>{
           <HeaderLinks text={Navlinks[0].text} href={Navlinks[0].href} key={Navlinks[0].key}/>
           <HeaderLinks text={Navlinks[1].text} href={Navlinks[1].href} key={Navlinks[1].key}/>
           <div className='flex items-center relative' onMouseEnter={dropDown} onMouseLeave={notDropDown}>
-        <HeaderLinks key={Navlinks[2].key} href={Navlinks[2].href} text={Navlinks[2].text}/>
+          <span>Ministries</span>
          {isOpen && (
         <div className=" grid grid-cols-2 bg-white text-gray-600 w-40 items-center justify-center p-2 rounded absolute mt-6 ml-28">
          {MinistriesLinks.map((link, index)=>(
