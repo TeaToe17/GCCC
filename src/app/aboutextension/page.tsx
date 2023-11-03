@@ -4,13 +4,26 @@ import Image from "next/image";
 import Header from '@/components/Header'
 import Link from "next/link";
 import { Navlinks } from "@/constants";
+import {useCallback,useState} from "react"
+import {DropDown} from "@/components/DropDown"
 
 const AboutExtension = () => {
+  const [dropDown, setDropDown] = useState(false)
+  const handleDropDown = useCallback(() => {
+    setDropDown(prevdropDown => !prevdropDown)
+  }, [])
   return (
-    <div className="paddings">
-     <Header />
+    <div className='w-full' >
+    {dropDown &&  
+    <DropDown onClose={handleDropDown}/>
+     }
+     {!dropDown && 
+     <div className="h-full">
+     <Header onOpen={handleDropDown}/>
+     </div>
+        }
       <Link href="about" >
-        <div className=" flex items-center font-bold text-red-700 text-left cursor-pointer lg:ml-[153px] ">
+        <div className=" flex items-center font-bold text-red-700 text-left cursor-pointer lg:ml-[153px] pt-32">
           <img src="arrow-right.png" alt=""  className="h-[16px] m-[2px] " />
           Back
         </div>

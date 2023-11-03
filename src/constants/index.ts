@@ -9,7 +9,7 @@ export const Navlinks = [
 export const FooterLinks = [
   {
     title: "About",
-    href: "/",
+    href: "/about",
     links: [
       "Weekly Services",
       "Leadership",
@@ -20,7 +20,7 @@ export const FooterLinks = [
   },
   {
     title: "Ministries",
-    href: "/",
+    href: "/purestreams",
     links: [
       "Pure Streams",
       "GRM Teens ",
@@ -30,12 +30,12 @@ export const FooterLinks = [
   },
   {
     title: "Events",
-    href: "/",
+    href: "/events",
     links: ["Upcoming Events", "Featured Events"],
   },
   {
     title: "Join Us",
-    href: "/",
+    href: "/joinus",
     links: ["Belivers Class", "Culture Class"],
   },
   {
