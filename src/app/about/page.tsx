@@ -95,7 +95,7 @@ const About = () => {
         <br />
         We believe that God has a timely message for you in every service. Open
         your heart, listen, and be ready to receive and be encouraged as you
-        engage
+        engage.
         <br />
         <br />
       </p>
