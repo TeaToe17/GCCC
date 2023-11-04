@@ -12,7 +12,7 @@ type Props ={
   image4:string,
   image5:string,
   image6:string,
-
+  
 }
 const MinistryComp = ({name,image1,image2,image3,image4,image5,image6}:Props) => {
     return (
